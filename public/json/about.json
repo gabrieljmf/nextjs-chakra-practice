@@ -45,11 +45,11 @@
       "end_date": "05-01-2016"
     }
   ],
-  "sports/hobbies": [
+  "sports+hobbies": [
     "Tennis",
     "Free-diving",
     "Cooking",
-    "Skiing/Snowboarding",
+    "Skiing+Snowboarding",
     "Judo",
     "Other sports",
     "Video Games",

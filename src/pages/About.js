@@ -1,30 +1,14 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
+import GetEducation, { GetWork } from "./fetch";
+// import { GetWork } from "./fetch";
 
-const GetData = () => {
-  const [workExperience, setWorkExperience] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8000/work_experience")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setWorkExperience(data);
-      });
-  }, []);
-  
+export default function About() {
   return (
-  <div>
-    { workExperience.map((job) => (
-        <div key={job.company}>{job.company}</div>
-    ))
-    } </div>
+    <div>
+      <GetWork />
+      <Link href="/api/data">data</Link>
+      <GetEducation />
+    </div>
   );
-};
-
-const About = () => {
-  return <div>TEST</div>;
-};
-
-export { GetData, About };
+}

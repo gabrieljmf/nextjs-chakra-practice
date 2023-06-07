@@ -1,0 +1,60 @@
+export default (req, res) => {
+    res.json({
+            "work_experience": [
+              {
+                "id": 0,
+                "company": "BinMates, Inc",
+                "role": "Software Engineer",
+                "start_date": "02-01-2023",
+                "end_date": "05-01-2023"
+              },
+              {
+                "id": 1,
+                "company": "Ritchie Brothers Financial Services",
+                "role": "Account Manager",
+                "start_date": "05-01-2019",
+                "end_date": "05-01-2021"
+              },
+              {
+                "id": 2,
+                "company": "Leavitt Machinery",
+                "role": "Territory Representative",
+                "start_date": "05-01-2016",
+                "end_date": "04-01-2019"
+              },
+              {
+                "id": 3,
+                "company": "City of Vancouver",
+                "role": "Lifeguard",
+                "start_date": "08-01-2009",
+                "end_date": "04-01-2016"
+              }
+            ],
+            "education": [
+              {
+                "id": 0,
+                "school": "BCIT",
+                "program": "Computer Systems Technology",
+                "start_date": "01-04-2022",
+                "end_date": "current"
+              },
+              {
+                "id": 1,
+                "school": "BCIT",
+                "program": "Marketing Management - Professional Sales Option",
+                "start_date": "08-01-2013",
+                "end_date": "05-01-2016"
+              }
+            ],
+            "sports+hobbies": [
+              "Tennis",
+              "Free-diving",
+              "Cooking",
+              "Skiing+Snowboarding",
+              "Judo",
+              "Other sports",
+              "Video Games",
+              "Trash Gacha Games"
+            ]
+    })
+}
