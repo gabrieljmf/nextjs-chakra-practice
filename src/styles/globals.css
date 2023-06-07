@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -11,7 +11,7 @@
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
+    #4ca358 0deg,
     #0885ff33 55deg,
     #54d6ff33 120deg,
     #0071ff33 160deg,
@@ -104,4 +104,4 @@ a {
   html {
     color-scheme: dark;
   }
-} */
+}
