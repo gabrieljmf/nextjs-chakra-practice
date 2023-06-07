@@ -1,14 +1,51 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import GetEducation, { GetWork } from "./fetch";
-// import { GetWork } from "./fetch";
+import Job from "@/components/Job";
+import Education from "@/components/Education";
 
-export default function About() {
+const About = ({ wexpData, educationData, sportsHobbiesData }) => {
   return (
     <div>
-      <GetWork />
-      <Link href="/api/data">data</Link>
-      <GetEducation />
+      <pre>
+        <h1>Work Experience</h1>
+        {wexpData.map(({ id, company, role, start_date, end_date }) => {
+          return (
+            <Job
+              key={id}
+              company={company}
+              role={role}
+              start_date={start_date}
+              end_date={end_date}
+            />
+          );
+        })}
+      </pre>
+      <pre>
+        {educationData.map(({ id, school, program, start_date, end_date }) => {
+          return (
+            <Education
+              key={id}
+              school={school}
+              program={program}
+              start_date={start_date}
+              end_date={end_date}
+            />
+          );
+        })}
+      </pre>
     </div>
   );
-}
+};
+
+export const getServerSideProps = async () => {
+  const {
+    work_experience: wexpData,
+    education: educationData,
+    sportshobbies: sportsHobbiesData,
+  } = await fetch("http://localhost:3000/api/data").then((res) => {
+    return res.json();
+  });
+
+  return { props: { wexpData, educationData, sportsHobbiesData } };
+};
+
+export default About;
