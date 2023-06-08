@@ -1,4 +1,4 @@
-export default (req, res) => {
+const Data = (req, res) => {
   res.json({
     work_experience: [
       {
@@ -58,3 +58,5 @@ export default (req, res) => {
     ],
   });
 };
+
+export default Data;
