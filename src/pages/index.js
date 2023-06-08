@@ -12,11 +12,7 @@ export default function Home() {
       600: "#191919",
       500: "#b7fcc2",
     },
-    // const fonts = {
-    //   body: 'kern',
-    //   heading: '',
 
-    // }
   };
   return (
     <>
