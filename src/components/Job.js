@@ -5,10 +5,8 @@ const Job = ({ company, role, start_date, end_date }) => {
 
   diff = diff < 12 ? diff + " months" : Math.ceil(diff / 12) + " years";
 
-  console.log(diff);
   return (
     <div style={{ paddingBottom: "2rem" }}>
-      <h1>Education</h1>
       <h2>{company}</h2>
       <p>{role}</p>
 

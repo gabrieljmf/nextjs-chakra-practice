@@ -36,7 +36,7 @@ export default (req, res) => {
         school: "BCIT",
         program: "Computer Systems Technology",
         start_date: "01-04-2022",
-        end_date: "current",
+        end_date: "12-31-2023",
       },
       {
         id: 1,

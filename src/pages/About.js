@@ -20,6 +20,7 @@ const About = ({ wexpData, educationData, sportsHobbiesData }) => {
         })}
       </pre>
       <pre>
+        <h1>Education</h1>
         {educationData.map(({ id, school, program, start_date, end_date }) => {
           return (
             <Education
@@ -31,6 +32,16 @@ const About = ({ wexpData, educationData, sportsHobbiesData }) => {
             />
           );
         })}
+      </pre>
+      <pre>
+        <h1>Sports and Hobbies</h1>
+        {/* {sportsHobbiesData.map((pastTime) => {
+          return (
+            <SportHobby 
+            key={pastTime.id} 
+            />
+          )
+        })} */}
       </pre>
     </div>
   );
