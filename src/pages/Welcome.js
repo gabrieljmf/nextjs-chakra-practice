@@ -16,7 +16,7 @@ const Welcome = () => {
   return (
     <>
       <label>
-        Welcome to Geb's page, please introduce yourself <br />
+        Welcome to Geb&apos;s page, please introduce yourself <br />
       </label>
       <br />
       <input
