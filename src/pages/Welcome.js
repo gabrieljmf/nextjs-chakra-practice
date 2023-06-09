@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
 
-// import getData from "./api/fetch";
-
 // TODO: Change document.body to a guest list array as a useState, add much more chakra-ui
 const Welcome = () => {
   const [yourName, setYourName] = useState("");

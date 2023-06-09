@@ -46,12 +46,12 @@ const About = ({ wexpData, educationData, sportsHobbiesData }) => {
   );
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const {
     work_experience: wexpData,
     education: educationData,
     sportshobbies: sportsHobbiesData,
-  } = await fetch("/api/data").then((res) => {
+  } = await fetch('https://nextjs-chakra-practice.vercel.app/api/data').then((res) => {
     return res.json();
   });
 
