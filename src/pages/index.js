@@ -1,7 +1,6 @@
 import Head from "next/head";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-// import { About, GetData } from "./About"
-import Welcome from "./Welcome";
+import { ChakraProvider } from "@chakra-ui/react";
+import Welcome from "./api/welcome";
 
 export default function Home() {
   const colors = {

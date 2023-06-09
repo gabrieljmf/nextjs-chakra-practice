@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Job from "@/components/Job";
 import Education from "@/components/Education";
 
@@ -52,7 +51,7 @@ export const getServerSideProps = async () => {
     work_experience: wexpData,
     education: educationData,
     sportshobbies: sportsHobbiesData,
-  } = await fetch("http://localhost:3000/api/data").then((res) => {
+  } = await fetch("/api/data").then((res) => {
     return res.json();
   });
 

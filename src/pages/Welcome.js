@@ -31,7 +31,7 @@ const Welcome = () => {
 
       <div>Hi Geb, my name is {yourName}</div>
       <div className="about">
-        <Link href="/About">Who is Gabe?</Link>
+        <Link href="/about">Who is Gabe?</Link>
       </div>
     </>
   );
